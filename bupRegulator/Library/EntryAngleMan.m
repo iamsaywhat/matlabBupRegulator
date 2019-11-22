@@ -9,8 +9,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function point = EntryAngleMan (AM1, AM2, Position, TrackingCourse)
     %% Определим курс до точек манёвра
-    Course1 = CourseCalculator(AM1, Position);
-    Course2 = CourseCalculator(AM2, Position);
+    Course1 = Heading(AM1, Position, 0);
+    Course2 = Heading(AM2, Position, 0);
     %% Найдём разницу с путевым
     Course1 = Course1 - TrackingCourse;
     Course2 = Course2 - TrackingCourse;

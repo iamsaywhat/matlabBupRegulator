@@ -16,5 +16,5 @@ function y = DistanceCalculator (Position, Target)
     fi2 = Target(1)*pi/180;
     d = sin(fi1)*sin(fi2) + cos(fi1)*cos(-fi2)*cos(la2-la1);
     % 6371 км средний радиус земли
-    y = acos(d)*6371e3;
+    y = acos(d)*6378245;
 end

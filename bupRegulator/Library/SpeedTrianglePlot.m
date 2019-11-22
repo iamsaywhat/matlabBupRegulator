@@ -18,7 +18,8 @@ function SpeedTrianglePlot(TrueAirspeed, GroundSpeed, Heading, Track)
     %% Определяем проекции вектора ветра
     WindX = -(TrueAirspeedX - GroundSpeedX);
     WindY = -(TrueAirspeedY - GroundSpeedY);
-    % Для построения графиков раскоментировать
+    %% Визуализация
+    figure(55)
     plot([0 TrueAirspeedX], [0 TrueAirspeedY]);
     hold on
     plot([0 GroundSpeedX], [0 GroundSpeedY]);
