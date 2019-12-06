@@ -3,5 +3,9 @@
 % рассогласования времени до земли и времени до точки горизонтально.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 distance = 0:1:17000;
-coefficient = 1.3*exp(-distance/3e3);
+coefficient = 3*exp(-distance/2.5e3);
+
+%     if coefficient > 1
+%         coefficient = 1;
+%     end
 plot(distance, coefficient), grid on, hold on
