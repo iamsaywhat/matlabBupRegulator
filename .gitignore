@@ -1,0 +1,8 @@
+*.log
+*.prj
+/bupRegulator/Previous Version
+/bupRegulator/Actual Version/flightController_ert_rtw
+/bupRegulator/Actual Version/Plant_ert_rtw
+/bupRegulator/Recover
+*slprj
+/other_files
