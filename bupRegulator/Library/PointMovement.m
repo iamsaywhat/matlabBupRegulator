@@ -16,5 +16,5 @@ function NPoint = PointMovement(Position, DistanceM, Bearing)
     %% Переводим в градусы
     Lat2 = Lat2/pi*180;
     Lon2 = Lon2/pi*180;
-    NPoint = [Lat2, Lon2, Position(3)];
+    NPoint = [Lat2, Lon2, Position(3), Position(4)];
 end    
